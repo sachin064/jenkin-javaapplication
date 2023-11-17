@@ -8,7 +8,6 @@ pipeline{
               gitCheckout(
                 branch: 'main',
                 url: 'https://github.com/sachin064/jenkin-javaapplication.git'
-
               )
             }
         }
