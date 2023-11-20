@@ -18,7 +18,7 @@ pipeline{
         }
         stage('Intigation test maven'){
             steps{
-                mnvIntigrationTest()
+                mnvIntigrationTests()
             }
         }
     }
