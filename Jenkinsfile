@@ -16,7 +16,7 @@ pipeline{
                 mvnTest()
             }
         }
-        stage('Unit Test Maven'){
+        stage('Intigation test maven'){
             steps{
                 mnvIntigrationTest()
             }
