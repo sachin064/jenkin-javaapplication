@@ -2,6 +2,9 @@
 
 pipeline{
     agent any
+    tools{
+        Maven 'testing-mvn'
+    }
     stages{
         stage("Git Checkout"){
             steps{
