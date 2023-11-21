@@ -31,8 +31,10 @@ pipeline{
         stage('Static Code analysis: sonarcube'){
         when { expression {params.action == 'create'}}
             steps{
+                step{
                 def SonarQubeCredentialsId = 'sonarqube-api'
                 staticCodeAnalysis(SonarQubeCredentialsId)
+                }
             }
         }
     }
